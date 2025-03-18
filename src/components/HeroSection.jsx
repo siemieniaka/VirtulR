@@ -3,7 +3,7 @@ import video2 from '../assets/video2.mp4';
 
 const HeroSection = () => {
 	return (
-		<section className='flex flex-col items-center mt-6 lg:mt-10' id='home'>
+		<section className='flex flex-col items-center lg:mt-10' id='home'>
 			<h1 className='text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide'>
 				VirtualR build tools
 				<span className='bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text'>
@@ -19,11 +19,11 @@ const HeroSection = () => {
 			<div className='flex justify-center my-10'>
 				<a
 					href='#'
-					className='bg-gradient-to-r from-orange-500 to-red-800 py-3 px-4 mx-3 rounded-md'
+					className='bg-gradient-to-r from-orange-500 to-red-800 py-2 px-3 mx-1 rounded-md'
 				>
 					Start for free
 				</a>
-				<a href='#' className='py-3 px-4 mx-3 rounded-md border'>
+				<a href='#' className='py-4 px-2 mx-3 rounded-md border'>
 					Documentation
 				</a>
 			</div>

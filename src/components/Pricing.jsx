@@ -3,7 +3,7 @@ import { pricingOptions } from '../constants';
 
 const Pricing = () => {
 	return (
-		<section className='mt-20 py-20' id='pricing'>
+		<section className='mt-10 py-20' id='pricing'>
 			<h2 className='text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wider'>
 				Pricing
 			</h2>

@@ -9,6 +9,10 @@ const Navbar = () => {
 	const toggleNavbar = () => {
 		setMobileDrawerOpen(!mobileDrawerOpen);
 	};
+
+	const closeNavbar = () => {
+		setMobileDrawerOpen(false);
+	};
 	return (
 		<nav className='sticky top-0 z-20 py-3 backdrop-blur-lg border-b border-neutral-700/80'>
 			<div className='container px-4 mx-auto relative lg:text-sm'>
@@ -43,16 +47,19 @@ const Navbar = () => {
 						</button>
 					</div>
 				</div>
+				{/* Mobile Nav */}
 				{mobileDrawerOpen && (
 					<div className='fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden'>
 						<ul>
 							{navItems.map((item, index) => (
 								<li key={index} className='py-4'>
-									<a href={item.href}>{item.label}</a>
+									<a href={item.href} onClick={closeNavbar}>
+										{item.label}
+									</a>
 								</li>
 							))}
 						</ul>
-						<div className='flex space-x-6'>
+						<div className='flex space-x-6 py-6'>
 							<a href='#' className='py-2 px-4 border rounded-md'>
 								Sign In
 							</a>
