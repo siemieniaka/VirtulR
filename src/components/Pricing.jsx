@@ -15,7 +15,7 @@ const Pricing = () => {
 								{option.title}
 
 								{option.title === 'Pro' && (
-									<span className='bg-gradient-to-r from-orange-500 to-red-400 text-transparent bg-clip-text text-xl mb-4 ml-2'>
+									<span className='bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text text-xl mb-4 ml-2'>
 										(Most Popular)
 									</span>
 								)}
