@@ -4,18 +4,18 @@ import video2 from '../assets/video2.mp4';
 const HeroSection = () => {
 	return (
 		<section className='flex flex-col items-center lg:mt-10' id='home'>
-			<h1 className='text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide'>
-				VirtualR build tools
+			<div className='text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide'>
+				<span>VirtualR build tools</span>
 				<span className='bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text'>
 					{' '}
 					for developers
 				</span>
-			</h1>
-			<p className='mt-10 text-lg text-center text-neutral-400 max-w-4xl'>
+			</div>
+			<h1 className='mt-10 text-lg text-center text-neutral-400 max-w-4xl'>
 				Empower your creativity and bring your VR app ideas to life with our
 				intuitive development tools. Get started today and turn your imagination
 				into immersive reality!
-			</p>
+			</h1>
 			<div className='flex justify-center my-10'>
 				<a
 					href='#'
